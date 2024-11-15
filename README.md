@@ -119,7 +119,7 @@ yarn start
 ## 📁 Estrutura do Projeto
 
 ```
-landing-page-starbucks/
+DesafioFinal/
 ├── src/
 │   ├── assets/         # Imagens e arquivos estáticos
 │   ├── components/     # Componentes React
