@@ -22,13 +22,13 @@ Este projeto foi desenvolvido como um desafio final de módulo, com o objetivo d
 
 
 
-### Seção de Novidades
+### Página de Novidades
 <div align="center">
   <img src="./src/assets/novidades.jpeg" alt="Página de Novidades" width="700px">
   <p><em>Página de Novidades apresentando os níveis de torra</em></p>
 </div>
 
-### Seção Sobre
+### Página Sobre
 <div align="center">
   <img src="./src/assets/sobre.jpeg" alt="Página Sobre" width="700px">
   <p><em>Página Sobre com informações da loja</em></p>
