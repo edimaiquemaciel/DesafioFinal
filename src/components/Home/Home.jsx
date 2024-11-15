@@ -1,13 +1,33 @@
 import { SectionHome, TextHome, Button, Circulo, ContainerCopoBtn, CopoImg } from "../../Style";
 import copoLaranja from "../../assets/laranja.png"
+import copoVermelho from "../../assets/vermelho.png"
+import copoAmarelo from "../../assets/amarelo.png"
 import laranjaBtn from "../../assets/laranja-btn.png"
 import vermelhoBtn from "../../assets/vermelho-btn.png"
 import amareloBtn from "../../assets/amarelo-btn.png"
+import { useState } from "react";
 
 export default function Home(){
+    const [copo, setCopo] = useState(copoLaranja);
+    const [backgroundColor, setBackgroundColor] = useState("#017143")
+
+    const mudarCopoLaranja = () =>{
+        setCopo(copoLaranja);
+        setBackgroundColor("#017143");
+    }
+    const mudarCopoVermelho = () =>{
+        setCopo(copoVermelho);
+        setBackgroundColor("#97090C");
+    }
+    const mudarCopoAmarelo = () =>{
+        setCopo(copoAmarelo);
+        setBackgroundColor("#DECD13");
+    }
+
+
     return(
         <SectionHome>
-            <CopoImg src={copoLaranja} alt="Copo Laranja" />
+            <CopoImg src={copo} alt="Copo Laranja" />
             <TextHome>
                 <div>
                     <h3>Mais que Café</h3>
@@ -17,11 +37,11 @@ export default function Home(){
                 <Button><a href="https://www.starbucksathome.com/br/blog/niveis-de-torra.html" target="_blank">SAIBA MAIS</a></Button>
             </TextHome>
             <ContainerCopoBtn>
-                <img src={laranjaBtn} alt="Mini Copo laranja" />
-                <img src={vermelhoBtn} alt="Mini Cpo vermelho" />
-                <img src={amareloBtn} alt="Mini Copo amarelo" />
+                <img onClick={mudarCopoLaranja} src={laranjaBtn} alt="Mini Copo laranja" />
+                <img onClick={mudarCopoVermelho} src={vermelhoBtn} alt="Mini Copo vermelho" />
+                <img onClick={mudarCopoAmarelo} src={amareloBtn} alt="Mini Copo amarelo" />
             </ContainerCopoBtn>
-            <Circulo/>
+            <Circulo backgroundColor={backgroundColor}/>
         </SectionHome>
 
     )

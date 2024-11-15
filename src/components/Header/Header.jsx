@@ -1,23 +1,22 @@
-import {Link} from 'react-router-dom';
 import logo from "../../assets/logo.png";
-import { HeaderContainer, NavBar, StyledList, StyledListItem, StyledLink } from '../../Style';
+import { HeaderContainer, StyledLink } from '../../Style';
 export default function Header(){
     return(
         <HeaderContainer>
             <img src={logo} alt="logomarca StarBucks" />
-            <NavBar>
-                <StyledList>
-                    <StyledListItem>
+            <nav>
+                <ul>
+                    <li>
                         <StyledLink to="/">Home</StyledLink>
-                    </StyledListItem>
-                    <StyledListItem>
+                    </li>
+                    <li>
                         <StyledLink to="/novidades">Novidades</StyledLink>
-                    </StyledListItem>
-                    <StyledListItem>
+                    </li>
+                    <li>
                         <StyledLink to="/sobre">Sobre</StyledLink>
-                    </StyledListItem>
-                </StyledList>
-            </NavBar>
+                    </li>
+                </ul>
+            </nav>
         </HeaderContainer>
     )
 }
