@@ -16,7 +16,7 @@ Este projeto foi desenvolvido como um desafio final de módulo, com o objetivo d
 
 ### Página Inicial
 <div align="center">
-  <img src="./src/assets/inicial.png" alt="Página Inicial" width="700px">
+  <img src="./src/assets/inicial.jpeg" alt="Página Inicial" width="700px">
   <p><em>Página inicial com o tema verde clássico Starbucks</em></p>
 </div>
 
@@ -24,13 +24,13 @@ Este projeto foi desenvolvido como um desafio final de módulo, com o objetivo d
 
 ### Seção de Novidades
 <div align="center">
-  <img src="./src/assets/novidades.png" alt="Página de Novidades" width="700px">
+  <img src="./src/assets/novidades.jpeg" alt="Página de Novidades" width="700px">
   <p><em>Página de Novidades apresentando os níveis de torra</em></p>
 </div>
 
 ### Seção Sobre
 <div align="center">
-  <img src="./src/assets/sobre.png" alt="Página Sobre" width="700px">
+  <img src="./src/assets/sobre.jpeg" alt="Página Sobre" width="700px">
   <p><em>Página Sobre com informações da loja</em></p>
 </div>
 
