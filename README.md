@@ -99,7 +99,7 @@ git clone https://github.com/edimaiquemaciel/DesafioFinal.git
 
 2. Entre no diretório do projeto
 ```bash
-cd landing-page-starbucks
+cd DesafioFinal
 ```
 
 3. Instale as dependências
