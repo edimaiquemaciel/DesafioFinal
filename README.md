@@ -94,7 +94,7 @@ Este projeto foi desenvolvido como um desafio final de módulo, com o objetivo d
 
 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/landing-page-starbucks.git
+git clone https://github.com/edimaiquemaciel/DesafioFinal.git
 ```
 
 2. Entre no diretório do projeto
