@@ -120,18 +120,43 @@ yarn start
 
 ```
 DesafioFinal/
-├── src/
-│   ├── assets/         # Imagens e arquivos estáticos
-│   ├── components/     # Componentes React
-│   │   ├── Header/    # Componente do cabeçalho
-│   │   ├── Home/      # Página inicial
-│   │   ├── Novidades/ # Seção de novidades
-│   │   └── Sobre/     # Página sobre
-│   ├── Style.js       # Styled components e estilos globais
-│   └── App.js         # Componente principal da aplicação
+├── node_modules/
 ├── public/
-└── package.json
+├── src/
+│   ├── components/
+│   │   ├── Button/
+│   │   │   └── Button.jsx
+│   │   ├── Header/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.styled.js
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── Home.styled.js
+│   │   ├── Novidades/
+│   │   │   ├── Novidades.jsx
+│   │   │   └── Novidades.styled.js
+│   │   └── Sobre/
+│   │       ├── Sobre.jsx
+│   │       └── Sobre.styled.js
+│   ├── App.jsx
+│   ├── globalStyle.js
+│   ├── main.jsx
+│   └── index.html
 ```
+
+### 📂 Detalhamento da Estrutura
+
+- `/src`: Diretório principal do código fonte
+  - `/components`: Componentes React organizados em pastas individuais
+    - `/Button`: Componente reutilizável de botão
+    - `/Header`: Componente do cabeçalho com navegação
+    - `/Home`: Componente da página inicial
+    - `/Novidades`: Componente da seção de novidades
+    - `/Sobre`: Componente da seção sobre
+  - `App.jsx`: Componente principal e configuração de rotas
+  - `globalStyle.js`: Estilos globais da aplicação
+  - `main.jsx`: Ponto de entrada da aplicação
+  - `index.html`: Arquivo HTML principal
 
 ## 🎯 Detalhamento das Funcionalidades
 
