@@ -1,11 +1,11 @@
 import logo from "../../assets/logo.png";
-import { HeaderContainer, StyledLink } from '../../Style';
+import { HeaderContainer, StyledLink, Ul } from "./Header.styled";
 export default function Header(){
     return(
         <HeaderContainer>
             <img src={logo} alt="logomarca StarBucks" />
             <nav>
-                <ul>
+                <Ul>
                     <li>
                         <StyledLink to="/">Home</StyledLink>
                     </li>
@@ -15,7 +15,7 @@ export default function Header(){
                     <li>
                         <StyledLink to="/sobre">Sobre</StyledLink>
                     </li>
-                </ul>
+                </Ul>
             </nav>
         </HeaderContainer>
     )

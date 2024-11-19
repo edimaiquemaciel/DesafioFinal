@@ -1,4 +1,5 @@
-import { SectionHome, TextHome, Button, Circulo, ContainerCopoBtn, CopoImg } from "../../Style";
+import { SectionHome, TextHome, Circulo, ContainerCopoBtn, CopoImg, H3, H2, Paragrafo, MiniCopoBtn } from "./Home.styled"
+import Button from "../Button/Button";
 import copoLaranja from "../../assets/laranja.png"
 import copoVermelho from "../../assets/vermelho.png"
 import copoAmarelo from "../../assets/amarelo.png"
@@ -30,18 +31,18 @@ export default function Home(){
             <CopoImg src={copo} alt="Copo Laranja" />
             <TextHome>
                 <div>
-                    <h3>Mais que Café</h3>
-                    <h2>Isso  é <span>Starbucks</span></h2>
+                    <H3>Mais que Café</H3>
+                    <H2>Isso  é <span>Starbucks</span></H2>
                 </div>
-                <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
+                <Paragrafo>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</Paragrafo>
                 <Button><a href="https://www.starbucksathome.com/br/blog/niveis-de-torra.html" target="_blank">SAIBA MAIS</a></Button>
             </TextHome>
             <ContainerCopoBtn>
-                <img onClick={mudarCopoLaranja} src={laranjaBtn} alt="Mini Copo laranja" />
-                <img onClick={mudarCopoVermelho} src={vermelhoBtn} alt="Mini Copo vermelho" />
-                <img onClick={mudarCopoAmarelo} src={amareloBtn} alt="Mini Copo amarelo" />
+                <MiniCopoBtn onClick={mudarCopoLaranja} src={laranjaBtn} alt="Mini Copo laranja" />
+                <MiniCopoBtn onClick={mudarCopoVermelho} src={vermelhoBtn} alt="Mini Copo vermelho" />
+                <MiniCopoBtn onClick={mudarCopoAmarelo} src={amareloBtn} alt="Mini Copo amarelo" />
             </ContainerCopoBtn>
-            <Circulo backgroundColor={backgroundColor}/>
+            <Circulo $backgroundColor={backgroundColor}/>
         </SectionHome>
 
     )

@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Novidades from './components/Novidades/Novidades';
 import Sobre from './components/Sobre/Sobre';
-import { GlobalStyles } from './Style';
+import { GlobalStyles } from './globalStyle';
 
 
 export default function App(){
