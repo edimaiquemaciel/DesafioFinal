@@ -1,4 +1,4 @@
-import { SectionHome, TextHome, Circulo, ContainerCopoBtn, CopoImg, H3, H2, Paragrafo, MiniCopoBtn } from "./Home.styled"
+import { SectionHome, TextHome, Circulo, ContainerCopoBtn, CopoImg, H3, H2, Paragrafo, MiniCopoBtn, RedeSocial } from "./Home.styled"
 import Button from "../Button/Button";
 import copoLaranja from "../../assets/laranja.png"
 import copoVermelho from "../../assets/vermelho.png"
@@ -6,7 +6,11 @@ import copoAmarelo from "../../assets/amarelo.png"
 import laranjaBtn from "../../assets/laranja-btn.png"
 import vermelhoBtn from "../../assets/vermelho-btn.png"
 import amareloBtn from "../../assets/amarelo-btn.png"
+import twitter from "../../assets/twitter.png"
+import facebook from "../../assets/fb.png"
+import instagram from "../../assets/instagram.png"
 import { useState } from "react";
+import { ins } from "framer-motion/client";
 
 export default function Home(){
     const [copo, setCopo] = useState(copoLaranja);
@@ -43,6 +47,11 @@ export default function Home(){
                 <MiniCopoBtn onClick={mudarCopoAmarelo} src={amareloBtn} alt="Mini Copo amarelo" />
             </ContainerCopoBtn>
             <Circulo $backgroundColor={backgroundColor}/>
+            <RedeSocial>
+                <a href="https://www.facebook.com/StarbucksBrasil" target="_blank"><img src={facebook} alt="Facebook"/></a>
+                <a href="https://x.com/starbucks" target="_blank"><img src={twitter} alt="Twitter" /></a>
+                <a href="https://www.instagram.com/starbucksbrasil/" targe="_blank"><img src={instagram} alt="Instagram" /></a>
+            </RedeSocial>
         </SectionHome>
 
     )

@@ -80,3 +80,19 @@ clip-path: circle(48% at 98% 100%);
 z-index:-1;
 transition: background-color 0.8s ease;
 `
+
+export const RedeSocial = styled.div`
+${FlexMixin("column", "space-between", "center")};
+position: absolute;
+gap: 20px;
+bottom: 290px;
+right: 35px;
+
+img{
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: scale(1.13);
+    }
+}
+
+`
